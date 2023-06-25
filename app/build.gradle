@@ -11,8 +11,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.jpgtopngconverter"
-        minSdk 29
-        targetSdk 33
+        minSdk 23
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 

@@ -5,4 +5,15 @@ import moxy.viewstate.strategy.AddToEndSingleStrategy
 import moxy.viewstate.strategy.StateStrategyType
 
 @StateStrategyType(AddToEndSingleStrategy::class)
-interface ConverterView : MvpView
+interface ConverterView : MvpView {
+    fun showDialogForRequestPermission()
+    fun showDialogForClosedPermission()
+    fun showLoading()
+    fun hideLoading()
+    fun makeToastSuccess()
+    fun makeToastError(error: Throwable)
+    fun makeToastGallery()
+    fun makeToastCancel()
+    fun showCancelBtn()
+    fun hideCancelBtn()
+}
